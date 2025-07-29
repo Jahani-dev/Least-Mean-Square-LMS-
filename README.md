@@ -52,7 +52,7 @@ This project illustrates key concepts in:
 - **Noise Cancellation Techniques**
 - **Real-time Algorithm Implementation**
 
-## 🔧 Technical Details
+## Technical Details
 
 ### Learning Rate Selection
 The learning rate μ is automatically calculated using:
