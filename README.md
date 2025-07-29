@@ -26,7 +26,8 @@ The **LMS (Least Mean Squares)** adaptive filter works by:
 
 ## Results
 
-![LMS ECG Denoising Results](ECG_Noise_Removal.png)
+<img width="735" height="589" alt="ECG_Noise_Removal" src="https://github.com/user-attachments/assets/ef5b4203-b188-4359-a9d7-ab204fcc66de" />
+
 
 The plots show:
 - **Top**: Clean simulated ECG signal (1 Hz)
@@ -42,7 +43,7 @@ The plots show:
 - **Samples**: 300 points
 
 
-## 🧠 Educational Value
+## Educational Value
 
 This project illustrates key concepts in:
 - **Adaptive Signal Processing**
@@ -50,15 +51,6 @@ This project illustrates key concepts in:
 - **Digital Filter Design**
 - **Noise Cancellation Techniques**
 - **Real-time Algorithm Implementation**
-
-## 📁 Repository Structure
-
-```
-lms-ecg-filter/
-├── README.md
-├── lms_ecg_filter.py          # Main implementation
-└── lms_ecg_denoising_results.png  # Results visualization
-```
 
 ## 🔧 Technical Details
 
@@ -68,14 +60,12 @@ The learning rate μ is automatically calculated using:
 signal_power = np.mean(reference_signal**2)
 mu = 1 / (10 * signal_power)
 ```
-
 This ensures filter stability and optimal convergence speed.
 
 ### Filter Convergence
 The LMS algorithm typically converges within the first few samples, as evidenced by the weight evolution plot.
 
 ## Applications
-
 This technique is widely used in:
 - **Medical Devices**: ECG machines, patient monitors
 - **Noise Cancellation**: Headphones, communication systems
@@ -83,8 +73,7 @@ This technique is widely used in:
 - **Seismic Processing**: Earthquake signal analysis
 - **Audio Processing**: Echo cancellation
 
-## 📚 Theory Background
-
+## Theory Background
 The LMS algorithm minimizes the mean square error between:
 - **Desired signal** d(n): Noisy ECG
 - **Filter output** y(n): Adaptive filter response
@@ -93,8 +82,7 @@ The LMS algorithm minimizes the mean square error between:
 
 The algorithm uses **stochastic gradient descent** to find the optimal filter weight.
 
-## 🔬 Extensions
-
+## Extensions
 Potential improvements and variations:
 - **Multi-tap FIR filter**: For complex noise patterns
 - **Normalized LMS (NLMS)**: Better convergence properties
@@ -102,14 +90,8 @@ Potential improvements and variations:
 - **Real ECG data**: Testing with actual physiological signals
 - **Multiple interference frequencies**: 60 Hz + harmonics
 
-## 📖 References
 
-- Haykin, S. (2014). *Adaptive Filter Theory* (5th Edition)
-- Widrow, B. & Stearns, S.D. (1985). *Adaptive Signal Processing*
-- IEEE Standards for ECG Signal Processing
-
-## 👤 Author
-
+## Author
 **Sahar Jahani**  
 - Email: [jahanisahar0@gmail.com]
 -  LinkedIn: [   ]
